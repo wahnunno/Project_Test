@@ -1,0 +1,44 @@
+.ctest {
+  width: 100%;
+  background-color: #c83812;
+  margin: 4px;
+  padding: 40px 0;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+  border-radius: 24px;
+  text-align: center;
+}
+.ctest1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-family: font-without-head;
+  font-weight: 700;
+  color: white;
+}
+.ctest2 {
+  margin: 4px;
+  padding: 40px px 0;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+  border-radius: 24px;
+  text-align: center;
+  background-color: #1c7c4e;
+}
+.ctest4 {
+  margin: 4px;
+  padding: 40px px 0;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+  border-radius: 24px;
+  text-align: center;
+  background-color: #307fe2;
+}
+.ctest5 {
+  margin: 4px;
+  padding: 40px px 0;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+  border-radius: 24px;
+  text-align: center;
+  background-color: #575756;
+}
