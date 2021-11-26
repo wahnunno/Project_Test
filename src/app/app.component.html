@@ -9,25 +9,32 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
   integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<div class="">
+<div>
   <div class="row">
     <div class="col-md-3" style="text-align: center;">
-      <h3>จำนวนผู้ติดเชื้อ<br>COVID-19<br>ในประเทศไทย</h3>
+      <div class="ctest7">จำนวนผู้ติดเชื้อ</div><br>
+      <div class="ctest6">COVID-19</div><br>
+      <div class="ctest7">ในประเทศไทย</div>
     </div>
     <div class="col-md-9" style="text-align: center;">
       <div class="row ctest">
-        <h3 class="ctest1">ติดเชื้อสะสม<br>{{ObjData.cases}}<br>({{ObjData.todayCases}})</h3>
+        <div class="ctest1">ติดเชื้อสะสม<br>{{ObjData?.cases}}<br>({{ObjData?.todayCases}})</div>
       </div>
       <div class="row">
         <div class="col-md-4 ctest2">
-          <h3 class="ctest1">หายแล้ว<br>{{ObjData.recovered}}<br>(+ {{ObjData.todayRecovered}})</h3>
+          <div class="ctest1">หายแล้ว<br>{{ObjData?.recovered}}<br>(+ {{ObjData?.todayRecovered}})</div>
         </div>
         <div class="col-md-4 ctest4">
-          <h3 class="ctest1">รักษาอยู่ใน รพ.<br>{{ObjData.active}}<br>({{ObjData.NewHospitalized}})</h3>
+          <div class="ctest1">รักษาอยู่ใน รพ.<br>{{ObjData?.active}}<br>({{ObjData?.NewHospitalized}})</div>
         </div>
         <div class="col-md-4 ctest5">
-          <h3 class="ctest1">เสียชีวิต<br>{{ObjData.deaths}}<br>(+ {{ObjData.todayDeaths}})</h3>
+          <div class="ctest1">เสียชีวิต<br>{{ObjData?.deaths}}<br>(+ {{ObjData?.todayDeaths}})</div>
         </div>
       </div>
     </div>
+    <div class="col-md-12" style="text-align: 
+    right;">
+      <div>อัปเดตข้อมูลล่าสุด : {{ObjData.UpdateDate}}</div>
+    </div>
   </div>
+</div>
