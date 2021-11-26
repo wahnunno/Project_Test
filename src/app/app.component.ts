@@ -20,7 +20,9 @@ export class AppComponent implements OnInit {
   public test() {
     this.http.get('https://static.easysunday.com/covid-19/getTodayCases.json').subscribe(res => {
       console.log(res)
-      this.ObjData = res;
+      if (res) {
+        this.ObjData = res;
+      }
     });
   }
 }

@@ -17,6 +17,28 @@
       <div class="ctest7">ในประเทศไทย</div>
     </div>
     <div class="col-md-9" style="text-align: center;">
+      <div class="row ctest ctest1" style="background-color: #c83812">
+        ติดเชื้อสะสม<br>{{ObjData?.cases}}<br>({{ObjData?.todayCases}})
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="ctest ctest1" style="background-color: #1c7c4e">
+            หายแล้ว<br>{{ObjData?.recovered}}<br>(+ {{ObjData?.todayRecovered}})
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ctest ctest1" style="background-color: #307fe2">
+            รักษาอยู่ใน รพ.<br>{{ObjData?.active}}<br>({{ObjData?.NewHospitalized}})
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ctest ctest1" style="background-color: #575756">
+            เสียชีวิต<br>{{ObjData?.deaths}}<br>(+ {{ObjData?.todayDeaths}})
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-md-9" style="text-align: center;">
       <div class="row ctest">
         <div class="ctest1">ติดเชื้อสะสม<br>{{ObjData?.cases}}<br>({{ObjData?.todayCases}})</div>
       </div>
@@ -31,10 +53,10 @@
           <div class="ctest1">เสียชีวิต<br>{{ObjData?.deaths}}<br>(+ {{ObjData?.todayDeaths}})</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="col-md-12" style="text-align: 
     right;">
-      <div>อัปเดตข้อมูลล่าสุด : {{ObjData.UpdateDate}}</div>
+      <div>อัปเดตข้อมูลล่าสุด : {{ObjData?.UpdateDate}}</div>
     </div>
   </div>
 </div>
